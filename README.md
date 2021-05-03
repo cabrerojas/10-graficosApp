@@ -12,6 +12,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+Run `npm install chart.js@2.9.3 --save`
+
+Run `npm install ng2-charts@2.3.0 --save`
+
+
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
