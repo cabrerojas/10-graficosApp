@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GraficosService } from '../../services/graficos.service';
 
 @Component({
   selector: 'app-dona-http',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DonaHttpComponent implements OnInit {
 
-  constructor() { }
+  constructor(private graficosService: GraficosService) { }
 
   ngOnInit(): void {
+
+    this.graficosService.getUsuariosRRSS()
+          .subscribe( data => {
+            console.log(data); 
+          } );
   }
 
 }
